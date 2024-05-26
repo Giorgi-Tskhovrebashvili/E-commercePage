@@ -1,12 +1,12 @@
-import { ImageDisplay, ProductInfo } from "../../common/components"
+import { ImageDisplay, ProductInfo } from "../../common/components/_organisms";
 
 const ProductPage = () => {
   return (
-    <div className="flex items-center gap-[125px]">
+    <div className="flex flex-col items-center gap-[24px] xl:flex-row xl:gap-[125px]">
       <ImageDisplay />
       <ProductInfo />
     </div>
-  )
-}
+  );
+};
 
-export default ProductPage
+export default ProductPage;

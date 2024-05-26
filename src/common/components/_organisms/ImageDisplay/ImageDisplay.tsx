@@ -3,7 +3,7 @@ import Image1 from "./image1.png";
 import Image2 from "./Image2.png";
 import Image3 from "./Image3.png";
 import Image4 from "./Image4.png";
-import { Close, LeftArrow, RightArrow } from "..";
+import { Close, LeftArrow, RightArrow } from "../../_atoms";
 
 const images = [Image1, Image2, Image3, Image4];
 
@@ -40,12 +40,12 @@ const ImageDisplay = () => {
   return (
     <div className="flex flex-col gap-[32px]">
       <img
-        className="w-[445px] h-[445px] rounded-[10px]"
+        className="w-[375px] h-[300px] xl:w-[445px] xl:h-[445px] rounded-[10px]"
         src={images[currentIndex]}
         alt={`Image ${currentIndex + 1}`}
         onClick={() => handleModalOpenClick(currentIndex)}
       />
-      <div className="flex gap-[31px]">
+      <div className="hidden xl:flex xl:gap-[31px]">
         {images.map((image, index) => (
           <img
             key={index}
@@ -61,8 +61,11 @@ const ImageDisplay = () => {
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
           <div className="p-4 rounded-lg relative">
-            <button className="absolute top-[-30px] right-[20px]" onClick={closeModal}>
-              <Close />
+            <button
+              className="absolute top-[-30px] right-[20px]"
+              onClick={closeModal}
+            >
+              <Close fill={"white"} />
             </button>
             <img
               className="w-[550px] h-[550px] rounded-[10px]"

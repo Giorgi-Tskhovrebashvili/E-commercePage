@@ -1,3 +1,5 @@
+import { CartIconType } from "../../../types/common";
+
 const CartIcon = ({display, fill, className}: CartIconType) => {
   return (
     <svg
@@ -20,9 +22,3 @@ const CartIcon = ({display, fill, className}: CartIconType) => {
 };
 
 export default CartIcon;
-
-interface CartIconType {
-  display: string;
-  fill: string;
-  className?: string;
-}

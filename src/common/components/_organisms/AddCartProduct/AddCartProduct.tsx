@@ -1,5 +1,5 @@
-import { DeleteBtn } from "..";
-import { AddCartProductType } from "../../types/common";
+import { AddCartProductType } from "../../../types/common";
+import { DeleteBtn } from "../../_atoms";
 import productImage from "../ImageDisplay/image1.png";
 
 const AddCartProduct = ({
@@ -11,7 +11,11 @@ const AddCartProduct = ({
 }: AddCartProductType) => {
   return (
     <div className="flex gap-[17px] p-[24px]">
-      <img className="w-[50px] h-[50px] rounded-[5px]" src={productImage} alt="" />
+      <img
+        className="w-[50px] h-[50px] rounded-[5px]"
+        src={productImage}
+        alt="productImage"
+      />
       <div>
         <p>{productName}</p>
         <div className="flex gap-[10px]">
@@ -22,7 +26,7 @@ const AddCartProduct = ({
           <span className="text-[#1D2026] font-bold">{totalAmount}</span>
         </div>
       </div>
-      <button className='' onClick={onClick}>
+      <button className="" onClick={onClick}>
         <DeleteBtn />
       </button>
     </div>

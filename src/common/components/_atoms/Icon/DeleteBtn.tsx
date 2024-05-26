@@ -15,7 +15,6 @@ const DeleteBtn = () => {
       />
       <mask
         id="mask0_0_632"
-        // style="mask-type:luminance"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

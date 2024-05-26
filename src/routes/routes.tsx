@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import App from "../App";
-import { MainLayout } from "../common/components";
 import { About, Collections, Contact, Men, Women } from "../pages";
+import { MainLayout } from "../common/components/_molecules";
 
 export const route = [
   {

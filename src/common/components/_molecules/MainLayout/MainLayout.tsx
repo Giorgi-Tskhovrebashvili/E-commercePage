@@ -1,12 +1,9 @@
 import { Header } from "..";
-
-interface MainLayoutType {
-  children: React.ReactNode;
-}
+import { MainLayoutType } from "../../../types/common";
 
 const MainLayout = ({ children }: MainLayoutType) => {
   return (
-    <div className="flex flex-col justify-center items-center w-[100%] px-[165px] py-[28px] gap-[90px]">
+    <div className="flex flex-col items-center m-auto w-[375px] xl:w-[100%] xl:px-[165px] xl:py-[28px] xl:gap-[90px]">
       <Header />
       {children}
     </div>

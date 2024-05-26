@@ -1,4 +1,4 @@
-import { HomeIconType } from "../../types/common";
+import { HomeIconType } from "../../../types/common";
 
 const HomeIcon = ({ width, height }: HomeIconType) => {
   return (
